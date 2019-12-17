@@ -1,0 +1,18 @@
+git command 
+
+git clone
+git checkout
+rename a branch:git branch -m old_name new_name
+switch a branch:git checkout branchname
+git pull
+git push
+
+
+git checkout -b dev/202004/workflow/feature/workflow-feature-no24612 origin/dev/202004/workflow/feature/workflow-feature-no24612
+
+//输出custom setting里面的值
+sfdx force:data:tree:export -q "SELECT Name, Description__c, Value__c FROM Config__c ORDER BY Name" -u dev06
+sfdx force:data:tree:export -q "SELECT Name,SearchType__c, InquiryType__c, CloseStartDate__c,CloseEndDate__c FROM ComplianceClosePeriod__c ORDER BY Name" -u dev06
+
+
+git config user.email "mingxuan.tian@accenture.com"
